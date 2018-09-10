@@ -1,2 +1,20 @@
 ---
 # defaults file for itigoag.firefox
+
+firefox_install: true
+
+firefox_policies:
+  policies:
+    DisableAppUpdate: true
+    DisableBuiltinPDFViewer: true
+    DisableDeveloperTools: true
+    DisableFeedbackCommands: true
+    DisableFirefoxStudies: true
+    DisablePocket: true
+    DisableTelemetry: true
+    DontCheckDefaultBrowser: true
+    InstallAddonsPermission:
+      Default: false
+    NoDefaultBookmarks: true
+    OverrideFirstRunPage: ''
+    OverridePostUpdatePage: ''

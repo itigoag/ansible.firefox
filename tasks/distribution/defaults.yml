@@ -1,6 +1,6 @@
 ---
 # tasks file for itigoag.firefox
 
-- name: Message
+- name: message
   debug:
     msg: "Your {{ ansible_system }} is not supported"

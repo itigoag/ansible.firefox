@@ -1,2 +1,37 @@
 ---
 # tasks file for itigoag.firefox
+
+- name: gather facts from chocolatey
+  win_chocolatey_facts:
+  when: ansible_chocolatey is undefined
+  tags:
+    - configuration
+    - packages
+
+- block:
+
+    - name: install firefox
+      win_chocolatey:
+        name: firefox
+      when: >
+        not (ansible_chocolatey.packages | json_query("[?package=='firefox']"))
+      tags:
+        - packages
+
+    - name: create distribution directory
+      win_file:
+        path: "C:\\Program Files\\Mozilla Firefox\\distribution"
+        state: directory
+      tags:
+        - configuration
+
+    - name: create policies file
+      win_template:
+        src: policies.json.j2
+        dest: "C:\\Program Files\\Mozilla Firefox\\distribution\\policies.json"
+      tags:
+        - configuration
+
+  when: >
+    firefox_install and (chocolatey_packages is undefined or chocolatey_packages['firefox'] is defined) or
+    chocolatey_packages is defined and chocolatey_packages['firefox'] is defined
