@@ -14,7 +14,11 @@
       win_chocolatey:
         name: firefox
       when: >
-        not (ansible_chocolatey.packages | json_query("[?package=='firefox']"))
+        packages is undefined or
+        not ( string | json_query(query) )
+      vars:
+        query: '[?package==`firefox`]'
+        string: "{{ ansible_chocolatey.packages | lower }}"
       tags:
         - packages
 
@@ -33,5 +37,5 @@
         - configuration
 
   when: >
-    firefox_install and (chocolatey_packages is undefined or chocolatey_packages['firefox'] is defined) or
-    chocolatey_packages is defined and chocolatey_packages['firefox'] is defined
+    firefox_install and (packages is undefined or packages['firefox'] is defined) or
+    packages is defined and packages['firefox'] is defined
