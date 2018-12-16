@@ -18,3 +18,4 @@ firefox_policies:
     NoDefaultBookmarks: true
     OverrideFirstRunPage: ''
     OverridePostUpdatePage: ''
+    OfferToSaveLogins: false
