@@ -1,6 +1,6 @@
 # Ansible Role: firefox
 
-[![Build Status](https://travis-ci.org/itigoag/ansible.firefox.svg?branch=master)](https://travis-ci.org/itigoag/ansible.firefox) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-firefox-blue.svg)](https://galaxy.ansible.com/itigoag/firefox)
+[![Build Status](https://img.shields.io/travis-ci/itigoag/ansible.firefox.svg?branch=master&style=popout-square)](https://travis-ci.org/itigoag/ansible.firefox) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-firefox-blue.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox) [![Ansible Role](https://img.shields.io/ansible/role/d/id.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox)
 
 ## Description
 
@@ -80,4 +80,5 @@ This project is under the MIT License. See the [LICENSE](licence) file for the f
 
 ## Copyright
 
+(c) 2018, Simon Bärlocher
 (c) 2018, ITIGO AG
