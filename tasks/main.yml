@@ -21,7 +21,7 @@
 
 - name: combines group policies with default policies
   set_fact:
-    firefox_policie:
+    firefox_policies:
       policies: "{{ firefox_policies.policies | combine(firefox_policies_group.policies) }}"
   when: firefox_policies_group is defined
 
