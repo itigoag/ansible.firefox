@@ -1,6 +1,6 @@
 # Ansible Role: firefox
 
-[![Build Status](https://img.shields.io/travis-ci/itigoag/ansible.firefox.svg?branch=master&style=popout-square)](https://travis-ci.org/itigoag/ansible.firefox) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-firefox-blue.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox) [![Ansible Role](https://img.shields.io/ansible/role/d/30128.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox)
+[![Build Status](https://img.shields.io/travis/itigoag/ansible.firefox.svg?branch=master&style=popout-square)](https://travis-ci.org/itigoag/ansible.firefox) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-firefox-blue.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox) [![Ansible Role](https://img.shields.io/ansible/role/d/30128.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox)
 
 ## Description
 
