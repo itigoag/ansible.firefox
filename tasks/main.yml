@@ -21,12 +21,14 @@
 
 - name: combines group policies with default policies
   set_fact:
-    firefox_policies.policies: "{{ firefox_policies.policies | combine(firefox_policies_group.policies) }}"
+    firefox_policie:
+      policies: "{{ firefox_policies.policies | combine(firefox_policies_group.policies) }}"
   when: firefox_policies_group is defined
 
 - name: combines host policies with default policies
   set_fact:
-    firefox_policies.policies: "{{ firefox_policies.policies | combine(firefox_policies_host.policies) }}"
+    firefox_policies:
+      policies: "{{ firefox_policies.policies | combine(firefox_policies_host.policies) }}"
   when: firefox_policies_host is defined
 
 - name: include distribution tasks
