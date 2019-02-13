@@ -18,4 +18,7 @@ firefox_policies:
     NoDefaultBookmarks: true
     OverrideFirstRunPage: ''
     OverridePostUpdatePage: ''
-    OfferToSaveLogins: false
+    OfferToSaveLogins: true
+    Homepage:
+      StartPage: homepage
+      URL: about:newtab
