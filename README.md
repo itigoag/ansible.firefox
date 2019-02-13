@@ -49,6 +49,10 @@ firefox_policies:
     NoDefaultBookmarks: true
     OverrideFirstRunPage: ''
     OverridePostUpdatePage: ''
+    OfferToSaveLogins: true
+    Homepage:
+      StartPage: homepage
+      URL: about:newtab
 ```
 
 ## Dependencies
@@ -65,6 +69,10 @@ None
 
 ## Changelog
 
+### 1.1.0
+
+* new default Settings
+
 ### 1.0.0
 
 * inital commit
@@ -80,5 +88,5 @@ This project is under the MIT License. See the [LICENSE](licence) file for the f
 
 ## Copyright
 
-(c) 2018, Simon Bärlocher
-(c) 2018, ITIGO AG
+(c) 2019, Simon Bärlocher
+(c) 2019, ITIGO AG
