@@ -1,6 +1,6 @@
 # Ansible Role: firefox
 
-[![Build Status](https://img.shields.io/travis/itigoag/ansible.firefox.svg?branch=master&style=popout-square)](https://travis-ci.org/itigoag/ansible.firefox) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-firefox-blue.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox) [![Ansible Role](https://img.shields.io/ansible/role/d/30128.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox)
+[![Build Status](https://img.shields.io/travis/itigoag/ansible.firefox.svg?branch=master&style=popout-square)](https://travis-ci.org/itigoag/ansible.firefox) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-firefox-blue.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox) [![Ansible Role](https://img.shields.io/ansible/role/d/30128.svg?style=popout-square)](https://galaxy.ansible.com/itigoag/firefox)
 
 ## Description
 
@@ -22,12 +22,12 @@ sudo pip install jmespath
 
 ## Role Variables
 
-| Variable             | Default     | Comments (type)                                   |
-| :---                 | :---        | :---                                              |
-| firefox_install | true | Firefox installed or not installed |
-| firefox_policies | | Standart Policies |
-| firefox_policies_group | | Group Policies |
-| firefox_policies_host | | Host Policies |
+| Variable               | Default | Comments (type)                    |
+| :--------------------- | :------ | :--------------------------------- |
+| firefox_install        | true    | Firefox installed or not installed |
+| firefox_policies       |         | Standart Policies                  |
+| firefox_policies_group |         | Group Policies                     |
+| firefox_policies_host  |         | Host Policies                      |
 
 The exact configurations are Repositroy in the following: [Policy Templates](https://github.com/mozilla/policy-templates/blob/master/README.md)
 
@@ -64,23 +64,27 @@ None
 ```yml
 - hosts: all
   roles:
-     - itigoag.firefox
+    - itigoag.firefox
 ```
 
 ## Changelog
 
+### 1.1.1
+
+- check if firefox key upper.
+
 ### 1.1.0
 
-* new default Settings
+- new default Settings
 
 ### 1.0.0
 
-* inital commit
+- inital commit
 
 ## Author
 
-* [Simon Bärlocher](https://sbaerlocher.ch)
-* [ITIGO AG](https://www.itigo.ch)
+- [Simon Bärlocher](https://sbaerlocher.ch)
+- [ITIGO AG](https://www.itigo.ch)
 
 ## License
 
