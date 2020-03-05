@@ -9,7 +9,6 @@
     - packages
 
 - block:
-
     - name: install firefox
       win_chocolatey:
         name: firefox
@@ -18,7 +17,7 @@
         not ( string | json_query(query) )
       vars:
         query: '[?package==`firefox`]'
-        string: "{{ ansible_chocolatey.packages | lower }}"
+        string: '{{ ansible_chocolatey.packages | lower }}'
       tags:
         - packages
 
@@ -37,5 +36,5 @@
         - configuration
 
   when: >
-    firefox_install and (packages is undefined or packages['firefox'] is defined) or
-    packages is defined and packages['firefox'] is defined
+    firefox_install and (packages is undefined or packages['firefox'] is defined or packages['Firefox'] is defined) or
+    packages is defined and packages['firefox'] is defined or packages['Firefox'] is defined
